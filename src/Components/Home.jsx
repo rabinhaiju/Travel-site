@@ -39,9 +39,9 @@ const Home = () => {
   useEffect(() => {
     const autoSlide = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    }, 3000); // Change the interval duration as needed (3000ms = 3 seconds)
+    }, 3000); 
 
-    return () => clearInterval(autoSlide); // Cleanup the interval on component unmount
+    return () => clearInterval(autoSlide); 
   }, [])
 
   const navigate = useNavigate();

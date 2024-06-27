@@ -8,6 +8,10 @@ import Lifemoment from './Components/Lifemoment';
 import Departure from './Components/Departure';
 import Contact from './Components/Contact';
 import DestinationDetail from './Components/DestinationDetail';
+import Nepal from './Components/Nepal';
+import India from './Components/India';
+import China from './Components/China';
+import Bhutan from './Components/Bhutan';
 
 const App = () => {
   return (
@@ -21,6 +25,10 @@ const App = () => {
         <Route path='/departure' element={<Departure />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/details/:id' element={<DestinationDetail />} />
+        <Route path='/nepal' element={<Nepal/>} />
+        <Route path='/india' element={<India/>} />
+        <Route path='/china' element={<China/>} />
+        <Route path='/bhutan' element={<Bhutan/>} />
       </Routes>
     </div>
   );
